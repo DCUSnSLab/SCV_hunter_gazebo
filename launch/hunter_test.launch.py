@@ -4,11 +4,20 @@ from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
 from launch_ros.parameter_descriptions import ParameterValue
 from launch.substitutions import Command, FindExecutable, PathJoinSubstitution
-from launch.actions import IncludeLaunchDescription
+from launch.actions import IncludeLaunchDescription, SetEnvironmentVariable, ExecuteProcess, RegisterEventHandler
+from launch.event_handlers import OnProcessExit
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
+    # Set Gazebo plugin path for velodyne plugin
+    scv_pkg_path = get_package_share_directory('scv_robot_gazebo')
+    plugin_lib_path = os.path.join(os.path.dirname(scv_pkg_path), 'lib')
+    gazebo_plugin_path = SetEnvironmentVariable(
+        'GAZEBO_PLUGIN_PATH',
+        [plugin_lib_path, ':', os.environ.get('GAZEBO_PLUGIN_PATH', '')]
+    )
+    
     # Include the Gazebo launch file
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([os.path.join(
@@ -59,7 +68,33 @@ def generate_launch_description():
         ]
     )
 
+    # Controller loading (Hunter style)
+    load_joint_state_broadcaster = ExecuteProcess(
+        cmd=['ros2', 'control', 'load_controller', '--set-state', 'active',
+             'joint_state_broadcaster'],
+        output='screen'
+    )
+
+    load_ackermann_controller = ExecuteProcess(
+        cmd=['ros2', 'control', 'load_controller', '--set-state', 'active',
+             'ackermann_like_controller'],
+        output='screen'
+    )
+
     return LaunchDescription([
+        gazebo_plugin_path,
+        RegisterEventHandler(
+            event_handler=OnProcessExit(
+                target_action=spawn_entity,
+                on_exit=[load_joint_state_broadcaster],
+            )
+        ),
+        RegisterEventHandler(
+            event_handler=OnProcessExit(
+                target_action=load_joint_state_broadcaster,
+                on_exit=[load_ackermann_controller],
+            )
+        ),
         gazebo,
         robot_state_publisher,
         spawn_entity,

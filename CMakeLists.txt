@@ -7,6 +7,10 @@ endif()
 
 find_package(ament_cmake REQUIRED)
 
+# Add submodule packages as subdirectories
+add_subdirectory(sensors/velodyne_simulator/velodyne_description)
+add_subdirectory(sensors/velodyne_simulator/velodyne_gazebo_plugins)
+
 install(DIRECTORY
   launch
   urdf

@@ -3,6 +3,12 @@
 
   <!-- Include the original hunter description -->
   <xacro:include filename="$(find scv_robot_gazebo)/robots/hunter_robot/hunter_description/description/robot_core.xacro" />
+  
+  <!-- Include ROS2 control for Hunter robot -->
+  <xacro:include filename="$(find scv_robot_gazebo)/robots/hunter_robot/hunter_description/description/ros2_control.xacro" />
+  
+  <!-- Include VLP-32C sensor (local version with correct mesh path) -->
+  <xacro:include filename="$(find scv_robot_gazebo)/urdf/velodyne_vlp32c.urdf.xacro" />
 
   <!-- Add front box with DAE mesh (Hunter style) -->
   <link name="front_box">
@@ -63,5 +69,10 @@
     <child link="back_box"/>
     <origin xyz="-0.0865 0 0.093" rpy="0 0 0"/>
   </joint>
+
+  <!-- VLP-32C Lidar on front box (same position as SCV) -->
+  <xacro:VLP-32C parent="front_box" name="velodyne" topic="/velodyne_points">
+    <origin xyz="-0.036 0 0.162" rpy="0 0 0"/>
+  </xacro:VLP-32C>
 
 </robot>
