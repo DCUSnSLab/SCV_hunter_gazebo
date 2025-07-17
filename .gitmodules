@@ -1,0 +1,6 @@
+[submodule "sensors/velodyne_simulator"]
+	path = sensors/velodyne_simulator
+	url = https://github.com/ToyotaResearchInstitute/velodyne_simulator.git
+[submodule "robots/hunter_robot"]
+	path = robots/hunter_robot
+	url = https://github.com/LCAS/hunter_robot.git
