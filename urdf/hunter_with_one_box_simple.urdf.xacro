@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<robot name="hunter_with_one_box_simple" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Include the original hunter description without ros2_control -->
+  <xacro:include filename="$(find scv_robot_gazebo)/robots/hunter_robot/hunter_description/description/robot_core.xacro" />
+  
+  <!-- Include VLP-32C sensor (local version with correct mesh path) -->
+  <xacro:include filename="$(find scv_robot_gazebo)/urdf/velodyne_vlp32c.urdf.xacro" />
+
+  <!-- Add front box with DAE mesh (Hunter style) -->
+  <link name="front_box">
+    <visual>
+      <origin xyz="0 0 0" rpy="3.1416 0 1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find scv_robot_gazebo)/meshes/front_box.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0.2 0.2 0.8 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.4 0.3 0.2"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="3.0"/>
+      <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1"/>
+    </inertial>
+  </link>
+
+  <joint name="front_box_joint" type="fixed">
+    <parent link="chassis"/>
+    <child link="front_box"/>
+    <origin xyz="0.343 0 0.137" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Add back box with DAE mesh (Hunter style) -->
+  <link name="back_box">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find scv_robot_gazebo)/meshes/back_box.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="red">
+        <color rgba="0.9 0.2 0.2 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.487 0.363 0.185"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="5.0"/>
+      <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1"/>
+    </inertial>
+  </link>
+
+  <joint name="back_box_joint" type="fixed">
+    <parent link="chassis"/>
+    <child link="back_box"/>
+    <origin xyz="-0.0865 0 0.093" rpy="0 0 0"/>
+  </joint>
+
+  <!-- VLP-32C Lidar on front box (same position as SCV) -->
+  <xacro:VLP-32C parent="front_box" name="velodyne" topic="/velodyne_points">
+    <origin xyz="-0.036 0 0.162" rpy="0 0 0"/>
+  </xacro:VLP-32C>
+
+  <!-- Add Gazebo differential drive plugin for simple control -->
+  <gazebo>
+    <plugin name="diff_drive" filename="libgazebo_ros_diff_drive.so">
+      <ros>
+        <namespace>/</namespace>
+        <remapping>cmd_vel:=cmd_vel</remapping>
+        <remapping>odom:=odom</remapping>
+      </ros>
+      
+      <!-- Wheel information -->
+      <left_joint>rear_left_wheel_joint</left_joint>
+      <right_joint>rear_right_wheel_joint</right_joint>
+      
+      <!-- Kinematics -->
+      <wheel_separation>0.5</wheel_separation>
+      <wheel_diameter>0.16</wheel_diameter>
+      
+      <!-- Limits -->
+      <max_wheel_torque>200</max_wheel_torque>
+      <max_wheel_acceleration>10.0</max_wheel_acceleration>
+      
+      <!-- Output -->
+      <publish_odom>true</publish_odom>
+      <publish_odom_tf>true</publish_odom_tf>
+      <publish_wheel_tf>false</publish_wheel_tf>
+      
+      <odometry_frame>odom</odometry_frame>
+      <robot_base_frame>base_link</robot_base_frame>
+    </plugin>
+  </gazebo>
+
+</robot>
