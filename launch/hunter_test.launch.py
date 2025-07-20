@@ -3,13 +3,31 @@ from launch import LaunchDescription
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
 from launch_ros.parameter_descriptions import ParameterValue
-from launch.substitutions import Command, FindExecutable, PathJoinSubstitution
-from launch.actions import IncludeLaunchDescription, SetEnvironmentVariable, ExecuteProcess, RegisterEventHandler
+from launch.substitutions import Command, FindExecutable, PathJoinSubstitution, LaunchConfiguration
+from launch.actions import IncludeLaunchDescription, SetEnvironmentVariable, ExecuteProcess, RegisterEventHandler, DeclareLaunchArgument
 from launch.event_handlers import OnProcessExit
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
+    # GPS coordinates arguments
+    gps_latitude_arg = DeclareLaunchArgument(
+        'gps_latitude',
+        default_value='37.5665',
+        description='GPS reference latitude in degrees'
+    )
+    
+    gps_longitude_arg = DeclareLaunchArgument(
+        'gps_longitude', 
+        default_value='126.9780',
+        description='GPS reference longitude in degrees'
+    )
+    
+    gps_altitude_arg = DeclareLaunchArgument(
+        'gps_altitude',
+        default_value='50.0',
+        description='GPS reference altitude in meters'
+    )
     # Set Gazebo plugin path for velodyne plugin
     scv_pkg_path = get_package_share_directory('scv_robot_gazebo')
     plugin_lib_path = os.path.join(os.path.dirname(scv_pkg_path), 'lib')
@@ -31,7 +49,7 @@ def generate_launch_description():
         launch_arguments={'world': world_file}.items()
     )
 
-    # Get URDF via xacro
+    # Get URDF via xacro with GPS coordinates
     robot_description_content = Command(
         [
             PathJoinSubstitution([FindExecutable(name="xacro")]),
@@ -39,6 +57,9 @@ def generate_launch_description():
             PathJoinSubstitution(
                 [FindPackageShare("scv_robot_gazebo"), "urdf", 'hunter_with_one_box.urdf.xacro']
             ),
+            " gps_latitude:=", LaunchConfiguration('gps_latitude'),
+            " gps_longitude:=", LaunchConfiguration('gps_longitude'),
+            " gps_altitude:=", LaunchConfiguration('gps_altitude'),
         ]
     )
     robot_description = {
@@ -89,6 +110,11 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
+        # GPS arguments
+        gps_latitude_arg,
+        gps_longitude_arg,
+        gps_altitude_arg,
+        
         gazebo_plugin_path,
         RegisterEventHandler(
             event_handler=OnProcessExit(

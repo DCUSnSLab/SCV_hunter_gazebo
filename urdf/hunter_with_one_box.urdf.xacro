@@ -1,6 +1,15 @@
 <?xml version="1.0"?>
 <robot name="hunter_with_one_box" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+  <!-- GPS reference coordinates parameters -->
+  <xacro:arg name="gps_latitude" default="37.5665"/>
+  <xacro:arg name="gps_longitude" default="126.9780"/>
+  <xacro:arg name="gps_altitude" default="50.0"/>
+  
+  <xacro:property name="gps_ref_lat" value="$(arg gps_latitude)"/>
+  <xacro:property name="gps_ref_lon" value="$(arg gps_longitude)"/>
+  <xacro:property name="gps_ref_alt" value="$(arg gps_altitude)"/>
+
   <!-- Include the original hunter description -->
   <xacro:include filename="$(find scv_robot_gazebo)/robots/hunter_robot/hunter_description/description/robot_core.xacro" />
   
@@ -147,9 +156,9 @@
           <remapping>~/out:=gps/fix</remapping>
         </ros>
         <frame_name>gnss_antenna</frame_name>
-        <reference_latitude>37.5665</reference_latitude>
-        <reference_longitude>126.9780</reference_longitude>
-        <reference_altitude>50.0</reference_altitude>
+        <reference_latitude>${gps_ref_lat}</reference_latitude>
+        <reference_longitude>${gps_ref_lon}</reference_longitude>
+        <reference_altitude>${gps_ref_alt}</reference_altitude>
       </plugin>
     </sensor>
   </gazebo>
