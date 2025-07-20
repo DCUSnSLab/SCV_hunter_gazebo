@@ -21,10 +21,14 @@ def generate_launch_description():
     #k_city_pkg_path = get_package_share_directory('k_city_gazebo')
     #world_file = os.path.join(k_city_pkg_path, 'worlds', 'k_city.world')
 
-    # Include the Gazebo launch file
+    # Get custom world file path
+    world_file = os.path.join(get_package_share_directory('scv_robot_gazebo'), 'worlds', 'empty_with_gps.world')
+    
+    # Include the Gazebo launch file with custom world
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([os.path.join(
             get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')]),
+        launch_arguments={'world': world_file}.items()
     )
 
     # Get URDF via xacro
