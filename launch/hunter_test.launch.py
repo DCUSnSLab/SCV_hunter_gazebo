@@ -74,6 +74,22 @@ def generate_launch_description():
         parameters=[robot_description]
     )
 
+    # Static transform publisher for odom -> base_footprint (temporary for TF tree)
+    static_transform_odom_to_base_footprint = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        output='screen',
+        arguments=['0', '0', '0', '0', '0', '0', 'odom', 'base_footprint']
+    )
+
+    # Static transform publisher for map -> odom (temporary for TF tree)
+    static_transform_map_to_odom = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher', 
+        output='screen',
+        arguments=['0', '0', '0', '0', '0', '0', 'map', 'odom']
+    )
+
     # Spawn entity
     spawn_entity = Node(
         package='gazebo_ros',
@@ -130,6 +146,8 @@ def generate_launch_description():
         ),
         gazebo,
         robot_state_publisher,
+        static_transform_map_to_odom,
+        static_transform_odom_to_base_footprint,
         spawn_entity,
         rviz,
     ])

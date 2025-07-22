@@ -178,7 +178,7 @@ def generate_launch_description():
 
     declare_simulator_cmd = DeclareLaunchArgument(
         'headless',
-        default_value='True',
+        default_value='False',
         description='Whether to execute gzclient)')
 
     # Gazebo 월드에 생성될 모델(지형지물, 장애물) 파일
@@ -262,6 +262,23 @@ def generate_launch_description():
         ]
     )
 
+    # 아래 정적 TF는 시뮬레이션 환경 셋업 간 임시로 생성하였으므로 필요에 따라 삭제하거나 변경해도 무방
+    # Static transform publisher for odom -> base_footprint (temporary for TF tree)
+    static_transform_odom_to_base_footprint = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        output='screen',
+        arguments=['0', '0', '0', '0', '0', '0', 'odom', 'base_footprint']
+    )
+
+    # Static transform publisher for map -> odom (temporary for TF tree)
+    static_transform_map_to_odom = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher', 
+        output='screen',
+        arguments=['0', '0', '0', '0', '0', '0', 'map', 'odom']
+    )
+
     rviz_cmd = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(launch_dir, 'rviz_launch.py')),
@@ -291,6 +308,8 @@ def generate_launch_description():
             gps_latitude_arg,
             gps_longitude_arg,
             gps_altitude_arg,
+            static_transform_map_to_odom,
+            static_transform_odom_to_base_footprint,
             gazebo_plugin_path
         ]
     )
