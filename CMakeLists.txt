@@ -18,6 +18,9 @@ install(DIRECTORY
   config
   robots
   sensors
+  maps
+  worlds
+  rviz
   DESTINATION share/${PROJECT_NAME}/
 )
 

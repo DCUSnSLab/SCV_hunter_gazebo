@@ -84,6 +84,7 @@
     <origin xyz="-0.036 0 0.162" rpy="0 0 0"/>
   </xacro:VLP-32C>
 
+
   <!-- GNSS antenna on back box -->
   <link name="gnss_antenna">
     <visual>

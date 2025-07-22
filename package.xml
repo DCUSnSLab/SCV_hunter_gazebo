@@ -17,6 +17,10 @@
   <exec_depend>urdf</exec_depend>
   <exec_depend>hunter_description</exec_depend>
   
+  <!-- Additional dependencies -->
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>pointcloud_to_laserscan</exec_depend>
+  
   <export>
     <build_type>ament_cmake</build_type>
   </export>
