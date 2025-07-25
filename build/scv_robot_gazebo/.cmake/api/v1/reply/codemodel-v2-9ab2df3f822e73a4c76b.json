@@ -1,0 +1,135 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-b50cfbc5d4099fd002c6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						1,
+						2
+					]
+				},
+				{
+					"build" : "sensors/velodyne_simulator/velodyne_description",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-sensors.velodyne_simulator.velodyne_description-bccbcf952e177bf296ef.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "sensors/velodyne_simulator/velodyne_description"
+				},
+				{
+					"build" : "sensors/velodyne_simulator/velodyne_gazebo_plugins",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-sensors.velodyne_simulator.velodyne_gazebo_plugins-cfab8b897fad184aaf97.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "sensors/velodyne_simulator/velodyne_gazebo_plugins",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "scv_robot_gazebo",
+					"targetIndexes" : 
+					[
+						1,
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "velodyne_description",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "velodyne_gazebo_plugins",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "gazebo_ros_velodyne_laser::@7d6f77a7585cac8c5146",
+					"jsonFile" : "target-gazebo_ros_velodyne_laser-dfed7742d68b41e2b996.json",
+					"name" : "gazebo_ros_velodyne_laser",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scv_robot_gazebo_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scv_robot_gazebo_uninstall-4d56fe15b5c7268dd2f8.json",
+					"name" : "scv_robot_gazebo_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-c4d742667fb3c46c1d67.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/build/scv_robot_gazebo",
+		"source" : "/home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

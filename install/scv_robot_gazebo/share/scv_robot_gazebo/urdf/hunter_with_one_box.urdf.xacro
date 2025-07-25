@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<robot name="hunter_with_one_box" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Include the original hunter description -->
+  <xacro:include filename="$(find scv_robot_gazebo)/robots/hunter_robot/hunter_description/description/robot_core.xacro" />
+  
+  <!-- Include ROS2 control for Hunter robot -->
+  <xacro:include filename="$(find scv_robot_gazebo)/robots/hunter_robot/hunter_description/description/ros2_control.xacro" />
+  
+  <!-- Include VLP-32C sensor (local version with correct mesh path) -->
+  <xacro:include filename="$(find scv_robot_gazebo)/urdf/velodyne_vlp32c.urdf.xacro" />
+
+  <!-- Add front box with DAE mesh (Hunter style) -->
+  <link name="front_box">
+    <visual>
+      <origin xyz="0 0 0" rpy="3.1416 0 1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find scv_robot_gazebo)/meshes/front_box.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0.2 0.2 0.8 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.4 0.3 0.2"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="3.0"/>
+      <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1"/>
+    </inertial>
+  </link>
+
+  <joint name="front_box_joint" type="fixed">
+    <parent link="chassis"/>
+    <child link="front_box"/>
+    <origin xyz="0.343 0 0.137" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Add back box with DAE mesh (Hunter style) -->
+  <link name="back_box">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find scv_robot_gazebo)/meshes/back_box.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="red">
+        <color rgba="0.9 0.2 0.2 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.487 0.363 0.185"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="5.0"/>
+      <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1"/>
+    </inertial>
+  </link>
+
+  <joint name="back_box_joint" type="fixed">
+    <parent link="chassis"/>
+    <child link="back_box"/>
+    <origin xyz="-0.0865 0 0.093" rpy="0 0 0"/>
+  </joint>
+
+  <!-- VLP-32C Lidar on front box (same position as SCV) -->
+  <xacro:VLP-32C parent="front_box" name="velodyne" topic="/velodyne_points">
+    <origin xyz="-0.036 0 0.162" rpy="0 0 0"/>
+  </xacro:VLP-32C>
+
+  <!-- GPS Sensor -->
+  <link name="gps_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file://$(find scv_robot_gazebo)/meshes/GNSS_antenna.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="gps_material">
+        <color rgba="0.8 0.8 0.8 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="0.05"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.1"/>
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/>
+    </inertial>
+  </link>
+
+  <joint name="gps_joint" type="fixed">
+    <parent link="back_box"/>
+    <child link="gps_link"/>
+    <origin xyz="0.1175 0.0 0.11" rpy="0 0 0"/>
+  </joint>
+
+  <!-- IMU Sensor -->
+  <link name="imu_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.025 0.025 0.025"/>
+      </geometry>
+      <material name="imu_material">
+        <color rgba="0.0 0.0 0.9 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.025 0.025 0.025"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.05"/>
+      <inertia ixx="0.00001" ixy="0.0" ixz="0.0" iyy="0.00001" iyz="0.0" izz="0.00001"/>
+    </inertial>
+  </link>
+
+  <joint name="imu_joint" type="fixed">
+    <parent link="front_box"/>
+    <child link="imu_link"/>
+    <origin xyz="0.171 0 0.041" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Gazebo GPS Sensor Plugin -->
+  <gazebo reference="gps_link">
+    <sensor type="gps" name="gps_sensor">
+      <always_on>true</always_on>
+      <update_rate>1</update_rate>
+      <plugin name="gps_plugin" filename="libgazebo_ros_gps_sensor.so">
+        <ros>
+          <namespace>/</namespace>
+          <remapping>~/out:=gps/fix</remapping>
+        </ros>
+        <frame_name>gps_link</frame_name>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+  <!-- Gazebo IMU Sensor Plugin -->
+  <gazebo reference="imu_link">
+    <sensor type="imu" name="imu_sensor">
+      <always_on>true</always_on>
+      <update_rate>100</update_rate>
+      <plugin name="imu_plugin" filename="libgazebo_ros_imu_sensor.so">
+        <ros>
+          <namespace>/</namespace>
+          <remapping>~/out:=imu/data</remapping>
+        </ros>
+        <frame_name>imu_link</frame_name>
+        <initial_orientation_as_reference>false</initial_orientation_as_reference>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+</robot>

@@ -1,0 +1,479 @@
+[0.000000] (-) TimerEvent: {}
+[0.000130] (scv_robot_gazebo) JobQueued: {'identifier': 'scv_robot_gazebo', 'dependencies': OrderedDict()}
+[0.000154] (scv_robot_gazebo) JobStarted: {'identifier': 'scv_robot_gazebo'}
+[0.006622] (scv_robot_gazebo) JobProgress: {'identifier': 'scv_robot_gazebo', 'progress': 'cmake'}
+[0.007052] (scv_robot_gazebo) Command: {'cmd': ['/usr/bin/cmake', '/home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo', '-DCMAKE_INSTALL_PREFIX=/home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo'], 'cwd': '/home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/build/scv_robot_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'ko:en'), ('USER', 'd2-521-30'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('LC_TIME', 'ko_KR.UTF-8'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/d2-521-30'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/d2-521-30/.nvm/versions/node/v22.17.1/bin'), ('NVM_INC', '/home/d2-521-30/.nvm/versions/node/v22.17.1/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1492'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/d2-521-30/.nvm'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'd2-521-30'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'd2-521-30'), ('TERM', 'xterm-256color'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/d2-521-30/.nvm/versions/node/v22.17.1/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/d252130-X570-AORUS-ELITE:@/tmp/.ICE-unix/1443,unix/d252130-X570-AORUS-ELITE:/tmp/.ICE-unix/1443'), ('PAPERSIZE', 'a4'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b65b5a36_1d4c_4fff_9478_1273fe22819f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ko_KR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CLAUDECODE', '1'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/build/scv_robot_gazebo'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.066684] (scv_robot_gazebo) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099288] (-) TimerEvent: {}
+[0.120561] (scv_robot_gazebo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.130661] (scv_robot_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199391] (-) TimerEvent: {}
+[0.200706] (scv_robot_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.206860] (scv_robot_gazebo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.207174] (scv_robot_gazebo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.207603] (scv_robot_gazebo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.211843] (scv_robot_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.290364] (scv_robot_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.296697] (scv_robot_gazebo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.296907] (scv_robot_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.297259] (scv_robot_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.299456] (-) TimerEvent: {}
+[0.299579] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.399575] (-) TimerEvent: {}
+[0.426347] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.499695] (-) TimerEvent: {}
+[0.570448] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found gazebo_dev: 3.9.0 (/opt/ros/humble/share/gazebo_dev/cmake)\n'}
+[0.577248] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[0.585645] (scv_robot_gazebo) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[0.599783] (-) TimerEvent: {}
+[0.602076] (scv_robot_gazebo) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[0.699895] (-) TimerEvent: {}
+[0.733963] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[0.793116] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[0.799974] (-) TimerEvent: {}
+[0.818758] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[0.900109] (-) TimerEvent: {}
+[0.990857] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[1.000173] (-) TimerEvent: {}
+[1.006070] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[1.010122] (scv_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.015352] (scv_robot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[1.016467] (scv_robot_gazebo) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[1.016828] (scv_robot_gazebo) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[1.021648] (scv_robot_gazebo) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[1.036346] (scv_robot_gazebo) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[1.072901] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[1.082379] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[1.090419] (scv_robot_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[1.094710] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[1.094896] (scv_robot_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[1.099300] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[1.099454] (scv_robot_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[1.100243] (-) TimerEvent: {}
+[1.103243] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[1.103360] (scv_robot_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[1.107090] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[1.107219] (scv_robot_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[1.111068] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[1.111242] (scv_robot_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[1.115484] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[1.200365] (-) TimerEvent: {}
+[1.205529] (scv_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.207296] (scv_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[1.207642] (scv_robot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[1.227449] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[1.239601] (scv_robot_gazebo) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[1.245338] (scv_robot_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[1.259590] (scv_robot_gazebo) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[1.295649] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[1.300424] (-) TimerEvent: {}
+[1.300520] (scv_robot_gazebo) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[1.311770] (scv_robot_gazebo) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[1.347971] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[1.350826] (scv_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[1.351425] (scv_robot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[1.373254] (scv_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.377618] (scv_robot_gazebo) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[1.388974] (scv_robot_gazebo) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[1.400526] (-) TimerEvent: {}
+[1.421430] (scv_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[1.423225] (scv_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[1.423593] (scv_robot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[1.423771] (scv_robot_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.424397] (scv_robot_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.425542] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[1.435260] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[1.435550] (scv_robot_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[1.437379] (scv_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[1.437761] (scv_robot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[1.438044] (scv_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.440362] (scv_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[1.440683] (scv_robot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[1.500619] (-) TimerEvent: {}
+[1.521697] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[1.529621] (scv_robot_gazebo) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[1.543849] (scv_robot_gazebo) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[1.577772] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[1.583518] (scv_robot_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[1.597294] (scv_robot_gazebo) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[1.600712] (-) TimerEvent: {}
+[1.634568] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[1.634809] (scv_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[1.635103] (scv_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.635429] (scv_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[1.638173] (scv_robot_gazebo) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[1.638455] (scv_robot_gazebo) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[1.651613] (scv_robot_gazebo) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[1.683126] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[1.700801] (-) TimerEvent: {}
+[1.715451] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.719862] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.728684] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.739348] (scv_robot_gazebo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.753527] (scv_robot_gazebo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.790030] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.792027] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.800896] (-) TimerEvent: {}
+[1.884623] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.900997] (-) TimerEvent: {}
+[1.910101] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.955887] (scv_robot_gazebo) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.963625] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.001107] (-) TimerEvent: {}
+[2.008577] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)\n'}
+[2.053009] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.068098] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found tf2: 0.25.13 (/opt/ros/humble/share/tf2/cmake)\n'}
+[2.101208] (-) TimerEvent: {}
+[2.138954] (scv_robot_gazebo) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.188762] (scv_robot_gazebo) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.201316] (-) TimerEvent: {}
+[2.218388] (scv_robot_gazebo) StdoutLine: {'line': b'-- Generating done\n'}
+[2.227018] (scv_robot_gazebo) StdoutLine: {'line': b'-- Build files have been written to: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/build/scv_robot_gazebo\n'}
+[2.241034] (scv_robot_gazebo) CommandEnded: {'returncode': 0}
+[2.242240] (scv_robot_gazebo) JobProgress: {'identifier': 'scv_robot_gazebo', 'progress': 'build'}
+[2.243757] (scv_robot_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/build/scv_robot_gazebo', '--', '-j16', '-l16'], 'cwd': '/home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/build/scv_robot_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'ko:en'), ('USER', 'd2-521-30'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('LC_TIME', 'ko_KR.UTF-8'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/d2-521-30'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/d2-521-30/.nvm/versions/node/v22.17.1/bin'), ('NVM_INC', '/home/d2-521-30/.nvm/versions/node/v22.17.1/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1492'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/d2-521-30/.nvm'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'd2-521-30'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'd2-521-30'), ('TERM', 'xterm-256color'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/d2-521-30/.nvm/versions/node/v22.17.1/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/d252130-X570-AORUS-ELITE:@/tmp/.ICE-unix/1443,unix/d252130-X570-AORUS-ELITE:/tmp/.ICE-unix/1443'), ('PAPERSIZE', 'a4'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b65b5a36_1d4c_4fff_9478_1273fe22819f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ko_KR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CLAUDECODE', '1'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/build/scv_robot_gazebo'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.301436] (-) TimerEvent: {}
+[2.303638] (scv_robot_gazebo) StdoutLine: {'line': b'[ 50%] Building CXX object sensors/velodyne_simulator/velodyne_gazebo_plugins/CMakeFiles/gazebo_ros_velodyne_laser.dir/src/GazeboRosVelodyneLaser.cpp.o\n'}
+[2.401530] (-) TimerEvent: {}
+[2.501709] (-) TimerEvent: {}
+[2.601895] (-) TimerEvent: {}
+[2.702081] (-) TimerEvent: {}
+[2.802277] (-) TimerEvent: {}
+[2.902460] (-) TimerEvent: {}
+[3.002693] (-) TimerEvent: {}
+[3.102908] (-) TimerEvent: {}
+[3.203110] (-) TimerEvent: {}
+[3.303296] (-) TimerEvent: {}
+[3.403456] (-) TimerEvent: {}
+[3.503651] (-) TimerEvent: {}
+[3.603838] (-) TimerEvent: {}
+[3.704019] (-) TimerEvent: {}
+[3.804207] (-) TimerEvent: {}
+[3.904384] (-) TimerEvent: {}
+[4.004558] (-) TimerEvent: {}
+[4.104716] (-) TimerEvent: {}
+[4.204890] (-) TimerEvent: {}
+[4.305083] (-) TimerEvent: {}
+[4.405278] (-) TimerEvent: {}
+[4.505479] (-) TimerEvent: {}
+[4.605677] (-) TimerEvent: {}
+[4.705827] (-) TimerEvent: {}
+[4.805955] (-) TimerEvent: {}
+[4.906084] (-) TimerEvent: {}
+[5.006218] (-) TimerEvent: {}
+[5.106370] (-) TimerEvent: {}
+[5.206559] (-) TimerEvent: {}
+[5.306744] (-) TimerEvent: {}
+[5.406944] (-) TimerEvent: {}
+[5.507141] (-) TimerEvent: {}
+[5.607339] (-) TimerEvent: {}
+[5.707550] (-) TimerEvent: {}
+[5.807754] (-) TimerEvent: {}
+[5.907961] (-) TimerEvent: {}
+[6.008167] (-) TimerEvent: {}
+[6.108375] (-) TimerEvent: {}
+[6.208578] (-) TimerEvent: {}
+[6.308788] (-) TimerEvent: {}
+[6.408992] (-) TimerEvent: {}
+[6.509196] (-) TimerEvent: {}
+[6.609401] (-) TimerEvent: {}
+[6.709618] (-) TimerEvent: {}
+[6.809819] (-) TimerEvent: {}
+[6.910021] (-) TimerEvent: {}
+[7.010223] (-) TimerEvent: {}
+[7.110429] (-) TimerEvent: {}
+[7.210640] (-) TimerEvent: {}
+[7.310844] (-) TimerEvent: {}
+[7.411053] (-) TimerEvent: {}
+[7.511252] (-) TimerEvent: {}
+[7.611451] (-) TimerEvent: {}
+[7.711666] (-) TimerEvent: {}
+[7.811867] (-) TimerEvent: {}
+[7.912076] (-) TimerEvent: {}
+[8.012278] (-) TimerEvent: {}
+[8.112478] (-) TimerEvent: {}
+[8.212683] (-) TimerEvent: {}
+[8.312883] (-) TimerEvent: {}
+[8.413095] (-) TimerEvent: {}
+[8.513305] (-) TimerEvent: {}
+[8.613495] (-) TimerEvent: {}
+[8.713709] (-) TimerEvent: {}
+[8.813893] (-) TimerEvent: {}
+[8.914063] (-) TimerEvent: {}
+[9.014252] (-) TimerEvent: {}
+[9.114461] (-) TimerEvent: {}
+[9.214697] (-) TimerEvent: {}
+[9.314900] (-) TimerEvent: {}
+[9.415101] (-) TimerEvent: {}
+[9.515297] (-) TimerEvent: {}
+[9.615501] (-) TimerEvent: {}
+[9.715711] (-) TimerEvent: {}
+[9.815919] (-) TimerEvent: {}
+[9.916139] (-) TimerEvent: {}
+[10.013702] (scv_robot_gazebo) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,\n'}
+[10.013966] (scv_robot_gazebo) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,\n'}
+[10.014059] (scv_robot_gazebo) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,\n'}
+[10.014141] (scv_robot_gazebo) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,\n'}
+[10.014218] (scv_robot_gazebo) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,\n'}
+[10.014295] (scv_robot_gazebo) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,\n'}
+[10.014374] (scv_robot_gazebo) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,\n'}
+[10.014450] (scv_robot_gazebo) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,\n'}
+[10.014537] (scv_robot_gazebo) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,\n'}
+[10.014627] (scv_robot_gazebo) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,\n'}
+[10.014706] (scv_robot_gazebo) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[10.014782] (scv_robot_gazebo) StderrLine: {'line': b'                 from /opt/ros/humble/include/gazebo_ros/node.hpp:18,\n'}
+[10.014860] (scv_robot_gazebo) StderrLine: {'line': b'                 from /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/sensors/velodyne_simulator/velodyne_gazebo_plugins/include/velodyne_gazebo_plugins/GazeboRosVelodyneLaser.h:53,\n'}
+[10.014937] (scv_robot_gazebo) StderrLine: {'line': b'                 from /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/sensors/velodyne_simulator/velodyne_gazebo_plugins/src/GazeboRosVelodyneLaser.cpp:35:\n'}
+[10.015023] (scv_robot_gazebo) StderrLine: {'line': b'/home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/sensors/velodyne_simulator/velodyne_gazebo_plugins/src/GazeboRosVelodyneLaser.cpp: In member function \xe2\x80\x98virtual void gazebo::GazeboRosVelodyneLaser::Load(gazebo::sensors::SensorPtr, sdf::v9::ElementPtr)\xe2\x80\x99:\n'}
+[10.015105] (scv_robot_gazebo) StderrLine: {'line': b'/home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/sensors/velodyne_simulator/velodyne_gazebo_plugins/src/GazeboRosVelodyneLaser.cpp:295:40: warning: format \xe2\x80\x98%s\xe2\x80\x99 expects a matching \xe2\x80\x98char*\xe2\x80\x99 argument [-Wformat=]\n'}
+[10.015184] (scv_robot_gazebo) StderrLine: {'line': b'  295 |   RCLCPP_INFO(ros_node_->get_logger(), "Velodyne %slaser plugin ready");\n'}
+[10.015262] (scv_robot_gazebo) StderrLine: {'line': b'      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[10.015347] (scv_robot_gazebo) StderrLine: {'line': b'/home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/sensors/velodyne_simulator/velodyne_gazebo_plugins/src/GazeboRosVelodyneLaser.cpp:295:51: note: format string is defined here\n'}
+[10.015432] (scv_robot_gazebo) StderrLine: {'line': b'  295 |   RCLCPP_INFO(ros_node_->get_logger(), "Velodyne %slaser plugin ready");\n'}
+[10.015507] (scv_robot_gazebo) StderrLine: {'line': b'      |                                                  ~^\n'}
+[10.015609] (scv_robot_gazebo) StderrLine: {'line': b'      |                                                   |\n'}
+[10.015685] (scv_robot_gazebo) StderrLine: {'line': b'      |                                                   char*\n'}
+[10.016203] (-) TimerEvent: {}
+[10.116350] (-) TimerEvent: {}
+[10.216553] (-) TimerEvent: {}
+[10.316737] (-) TimerEvent: {}
+[10.416933] (-) TimerEvent: {}
+[10.517133] (-) TimerEvent: {}
+[10.617343] (-) TimerEvent: {}
+[10.717570] (-) TimerEvent: {}
+[10.817783] (-) TimerEvent: {}
+[10.917980] (-) TimerEvent: {}
+[11.018179] (-) TimerEvent: {}
+[11.118391] (-) TimerEvent: {}
+[11.218593] (-) TimerEvent: {}
+[11.318774] (-) TimerEvent: {}
+[11.418933] (-) TimerEvent: {}
+[11.519115] (-) TimerEvent: {}
+[11.619312] (-) TimerEvent: {}
+[11.719534] (-) TimerEvent: {}
+[11.819722] (-) TimerEvent: {}
+[11.919919] (-) TimerEvent: {}
+[12.020119] (-) TimerEvent: {}
+[12.120322] (-) TimerEvent: {}
+[12.220533] (-) TimerEvent: {}
+[12.320732] (-) TimerEvent: {}
+[12.420928] (-) TimerEvent: {}
+[12.521128] (-) TimerEvent: {}
+[12.621305] (-) TimerEvent: {}
+[12.721478] (-) TimerEvent: {}
+[12.821678] (-) TimerEvent: {}
+[12.921862] (-) TimerEvent: {}
+[13.022059] (-) TimerEvent: {}
+[13.122272] (-) TimerEvent: {}
+[13.222482] (-) TimerEvent: {}
+[13.322700] (-) TimerEvent: {}
+[13.422906] (-) TimerEvent: {}
+[13.523109] (-) TimerEvent: {}
+[13.619281] (scv_robot_gazebo) StdoutLine: {'line': b'[100%] Linking CXX shared library libgazebo_ros_velodyne_laser.so\n'}
+[13.623185] (-) TimerEvent: {}
+[13.723347] (-) TimerEvent: {}
+[13.823582] (-) TimerEvent: {}
+[13.923785] (-) TimerEvent: {}
+[14.023989] (-) TimerEvent: {}
+[14.108842] (scv_robot_gazebo) StdoutLine: {'line': b'[100%] Built target gazebo_ros_velodyne_laser\n'}
+[14.120814] (scv_robot_gazebo) CommandEnded: {'returncode': 0}
+[14.121651] (scv_robot_gazebo) JobProgress: {'identifier': 'scv_robot_gazebo', 'progress': 'install'}
+[14.124051] (-) TimerEvent: {}
+[14.130707] (scv_robot_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/build/scv_robot_gazebo'], 'cwd': '/home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/build/scv_robot_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'ko:en'), ('USER', 'd2-521-30'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('LC_TIME', 'ko_KR.UTF-8'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/d2-521-30'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/d2-521-30/.nvm/versions/node/v22.17.1/bin'), ('NVM_INC', '/home/d2-521-30/.nvm/versions/node/v22.17.1/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1492'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/d2-521-30/.nvm'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'd2-521-30'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'd2-521-30'), ('TERM', 'xterm-256color'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/d2-521-30/.nvm/versions/node/v22.17.1/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/d252130-X570-AORUS-ELITE:@/tmp/.ICE-unix/1443,unix/d252130-X570-AORUS-ELITE:/tmp/.ICE-unix/1443'), ('PAPERSIZE', 'a4'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b65b5a36_1d4c_4fff_9478_1273fe22819f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ko_KR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CLAUDECODE', '1'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/build/scv_robot_gazebo'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[14.137846] (scv_robot_gazebo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.138052] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//launch\n'}
+[14.138130] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//launch/hunter_test.launch.py\n'}
+[14.138308] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//urdf\n'}
+[14.138437] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//urdf/hunter_with_one_box.urdf.xacro\n'}
+[14.138507] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//urdf/velodyne_vlp32c.urdf.xacro\n'}
+[14.138666] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//meshes\n'}
+[14.138813] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//meshes/GNSS_antenna.stl\n'}
+[14.148720] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//meshes/front_steer_right_link.STL\n'}
+[14.150346] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//meshes/rear_wheel_link.STL\n'}
+[14.150616] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//meshes/right_rear_link.STL\n'}
+[14.152625] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//meshes/VLP-32C.stl\n'}
+[14.153970] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//meshes/front_box.dae\n'}
+[14.154134] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//meshes/left_rear_link.STL\n'}
+[14.155845] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//meshes/front_box.STL\n'}
+[14.156044] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//meshes/back_box.stl\n'}
+[14.156297] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//meshes/front_steer_link.STL\n'}
+[14.156392] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//meshes/front_steer_left_link.STL\n'}
+[14.159202] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//meshes/front_left_wheel_link.STL\n'}
+[14.161262] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//meshes/back_box.dae\n'}
+[14.161484] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//meshes/base_link.STL\n'}
+[14.168358] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//meshes/front_right_wheel_link.STL\n'}
+[14.169493] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//config\n'}
+[14.169693] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots\n'}
+[14.169790] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot\n'}
+[14.170012] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/README.md\n'}
+[14.170127] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/LICENSE\n'}
+[14.170211] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/.git\n'}
+[14.170431] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_description\n'}
+[14.170647] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_description/CMakeLists.txt\n'}
+[14.170766] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_description/launch\n'}
+[14.170867] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_description/launch/robot_view.launch.py\n'}
+[14.170947] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_description/meshes\n'}
+[14.171033] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_description/meshes/front_left_wheel.dae\n'}
+[14.171475] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_description/meshes/rear_right_wheel.dae\n'}
+[14.172339] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_description/meshes/rear_left_wheel.dae\n'}
+[14.173041] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_description/meshes/chassis.dae\n'}
+[14.175774] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_description/meshes/front_right_wheel.dae\n'}
+[14.176262] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_description/config\n'}
+[14.176421] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_description/config/ackermann_like_controller.yaml\n'}
+[14.176629] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_description/CHANGELOG.rst\n'}
+[14.176722] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_description/description\n'}
+[14.176910] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_description/description/robot_core.xacro\n'}
+[14.176996] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_description/description/robot_core_real_hack.xacro\n'}
+[14.177105] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_description/description/robot.urdf.xacro\n'}
+[14.177235] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_description/description/meshes.xacro\n'}
+[14.177430] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_description/description/inertial_macros.xacro\n'}
+[14.177529] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_description/description/ros2_control.xacro\n'}
+[14.177751] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_description/package.xml\n'}
+[14.177835] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_description/rviz\n'}
+[14.177943] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_description/rviz/robot_view.rviz\n'}
+[14.178027] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_gazebo\n'}
+[14.178276] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_gazebo/CMakeLists.txt\n'}
+[14.178362] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_gazebo/launch\n'}
+[14.178445] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_gazebo/launch/launch_sim.launch.py\n'}
+[14.178547] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_gazebo/config\n'}
+[14.178767] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_gazebo/config/gazebo_params.yaml\n'}
+[14.178851] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_gazebo/CHANGELOG.rst\n'}
+[14.178934] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/hunter_gazebo/package.xml\n'}
+[14.179017] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/.gitignore\n'}
+[14.179099] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/.devcontainer\n'}
+[14.179180] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/.devcontainer/Dockerfile\n'}
+[14.179369] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/.devcontainer/devcontainer.json\n'}
+[14.179452] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/.github\n'}
+[14.179684] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/.github/workflows\n'}
+[14.179827] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//robots/hunter_robot/.github/workflows/ros-ci.yml\n'}
+[14.179912] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors\n'}
+[14.179994] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator\n'}
+[14.180075] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/README.md\n'}
+[14.180157] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/LICENSE\n'}
+[14.180240] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/img\n'}
+[14.180322] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/img/rviz.png\n'}
+[14.180403] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/img/gpu.png\n'}
+[14.180593] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/.git\n'}
+[14.180691] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_description\n'}
+[14.180801] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_description/CMakeLists.txt\n'}
+[14.180884] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_description/launch\n'}
+[14.180966] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_description/launch/example-launch.py\n'}
+[14.181049] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_description/meshes\n'}
+[14.181221] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_description/meshes/HDL32E_scan.stl\n'}
+[14.181302] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_description/meshes/VLP16_base_2.stl\n'}
+[14.181392] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_description/meshes/HDL32E_base.dae\n'}
+[14.181474] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_description/meshes/VLP16_base_2.dae\n'}
+[14.181640] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_description/meshes/HDL32E_base.stl\n'}
+[14.181796] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_description/meshes/VLP16_base_1.dae\n'}
+[14.182066] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_description/meshes/VLP16_scan.dae\n'}
+[14.182207] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_description/meshes/VLP16_scan.stl\n'}
+[14.182343] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_description/meshes/HDL32E_scan.dae\n'}
+[14.182830] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_description/meshes/VLP16_base_1.stl\n'}
+[14.183039] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_description/urdf\n'}
+[14.183250] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_description/urdf/HDL-32E.urdf.xacro\n'}
+[14.183410] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_description/urdf/VLP-16.urdf.xacro\n'}
+[14.183654] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_description/urdf/VLP-32C.urdf.xacro\n'}
+[14.183923] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_description/urdf/example.urdf.xacro\n'}
+[14.184016] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_description/CHANGELOG.rst\n'}
+[14.184101] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_description/world\n'}
+[14.184183] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_description/world/example.world\n'}
+[14.184363] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_description/package.xml\n'}
+[14.184449] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_description/rviz\n'}
+[14.184551] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_description/rviz/example.rviz\n'}
+[14.184754] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/.gitignore\n'}
+[14.184844] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_gazebo_plugins\n'}
+[14.184927] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_gazebo_plugins/CMakeLists.txt\n'}
+[14.185009] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_gazebo_plugins/src\n'}
+[14.185093] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_gazebo_plugins/src/GazeboRosVelodyneLaser.cpp\n'}
+[14.185341] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_gazebo_plugins/CHANGELOG.rst\n'}
+[14.185430] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_gazebo_plugins/include\n'}
+[14.185523] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_gazebo_plugins/include/velodyne_gazebo_plugins\n'}
+[14.185623] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_gazebo_plugins/include/velodyne_gazebo_plugins/GazeboRosVelodyneLaser.h\n'}
+[14.185708] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_gazebo_plugins/package.xml\n'}
+[14.185790] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/bitbucket-pipelines.yml\n'}
+[14.185966] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/gazebo_upgrade.md\n'}
+[14.186044] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_simulator\n'}
+[14.186125] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_simulator/CMakeLists.txt\n'}
+[14.186209] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_simulator/CHANGELOG.rst\n'}
+[14.186319] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo//sensors/velodyne_simulator/velodyne_simulator/package.xml\n'}
+[14.186556] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/ament_index/resource_index/package_run_dependencies/scv_robot_gazebo\n'}
+[14.186659] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/ament_index/resource_index/parent_prefix_path/scv_robot_gazebo\n'}
+[14.186743] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo/environment/ament_prefix_path.sh\n'}
+[14.186961] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo/environment/ament_prefix_path.dsv\n'}
+[14.187046] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo/environment/path.sh\n'}
+[14.187158] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo/environment/path.dsv\n'}
+[14.187382] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo/local_setup.bash\n'}
+[14.187532] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo/local_setup.sh\n'}
+[14.187672] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo/local_setup.zsh\n'}
+[14.187775] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo/local_setup.dsv\n'}
+[14.187979] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo/package.dsv\n'}
+[14.188067] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/ament_index/resource_index/packages/scv_robot_gazebo\n'}
+[14.188233] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo/cmake/scv_robot_gazeboConfig.cmake\n'}
+[14.188318] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo/cmake/scv_robot_gazeboConfig-version.cmake\n'}
+[14.188477] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/scv_robot_gazebo/package.xml\n'}
+[14.188655] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/ament_index/resource_index/package_run_dependencies/velodyne_description\n'}
+[14.188815] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/ament_index/resource_index/parent_prefix_path/velodyne_description\n'}
+[14.189016] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/environment/ament_prefix_path.sh\n'}
+[14.189180] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/environment/ament_prefix_path.dsv\n'}
+[14.189332] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/environment/path.sh\n'}
+[14.189485] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/environment/path.dsv\n'}
+[14.189655] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/local_setup.bash\n'}
+[14.189796] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/local_setup.sh\n'}
+[14.189964] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/local_setup.zsh\n'}
+[14.190178] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/local_setup.dsv\n'}
+[14.190260] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/package.dsv\n'}
+[14.190416] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/ament_index/resource_index/packages/velodyne_description\n'}
+[14.190636] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/cmake/velodyne_descriptionConfig.cmake\n'}
+[14.190721] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/cmake/velodyne_descriptionConfig-version.cmake\n'}
+[14.190884] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/package.xml\n'}
+[14.190970] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/launch\n'}
+[14.191186] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/launch/example-launch.py\n'}
+[14.191268] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/meshes\n'}
+[14.191412] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/meshes/HDL32E_scan.stl\n'}
+[14.191493] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/meshes/VLP16_base_2.stl\n'}
+[14.191656] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/meshes/HDL32E_base.dae\n'}
+[14.191855] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/meshes/VLP16_base_2.dae\n'}
+[14.192158] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/meshes/HDL32E_base.stl\n'}
+[14.192354] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/meshes/VLP16_base_1.dae\n'}
+[14.192751] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/meshes/VLP16_scan.dae\n'}
+[14.192914] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/meshes/VLP16_scan.stl\n'}
+[14.193074] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/meshes/HDL32E_scan.dae\n'}
+[14.193439] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/meshes/VLP16_base_1.stl\n'}
+[14.193698] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/rviz\n'}
+[14.193918] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/rviz/example.rviz\n'}
+[14.194007] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/urdf\n'}
+[14.194223] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/urdf/HDL-32E.urdf.xacro\n'}
+[14.194308] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/urdf/VLP-16.urdf.xacro\n'}
+[14.194391] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/urdf/VLP-32C.urdf.xacro\n'}
+[14.194565] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/urdf/example.urdf.xacro\n'}
+[14.194672] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/world\n'}
+[14.194750] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_description/world/example.world\n'}
+[14.194929] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_gazebo_plugins/environment/library_path.sh\n'}
+[14.195079] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_gazebo_plugins/environment/library_path.dsv\n'}
+[14.195232] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/ament_index/resource_index/package_run_dependencies/velodyne_gazebo_plugins\n'}
+[14.195377] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/ament_index/resource_index/parent_prefix_path/velodyne_gazebo_plugins\n'}
+[14.195538] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_gazebo_plugins/environment/ament_prefix_path.sh\n'}
+[14.195709] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_gazebo_plugins/environment/ament_prefix_path.dsv\n'}
+[14.195922] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_gazebo_plugins/environment/path.sh\n'}
+[14.196025] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_gazebo_plugins/environment/path.dsv\n'}
+[14.196201] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_gazebo_plugins/local_setup.bash\n'}
+[14.196356] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_gazebo_plugins/local_setup.sh\n'}
+[14.196440] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_gazebo_plugins/local_setup.zsh\n'}
+[14.196615] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_gazebo_plugins/local_setup.dsv\n'}
+[14.196717] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_gazebo_plugins/package.dsv\n'}
+[14.196879] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/ament_index/resource_index/packages/velodyne_gazebo_plugins\n'}
+[14.196960] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_gazebo_plugins/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[14.197170] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_gazebo_plugins/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[14.197253] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_gazebo_plugins/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[14.197404] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_gazebo_plugins/cmake/velodyne_gazebo_pluginsConfig.cmake\n'}
+[14.197602] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_gazebo_plugins/cmake/velodyne_gazebo_pluginsConfig-version.cmake\n'}
+[14.197702] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/share/velodyne_gazebo_plugins/package.xml\n'}
+[14.197870] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/include\n'}
+[14.197949] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/include/velodyne_gazebo_plugins\n'}
+[14.198029] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/include/velodyne_gazebo_plugins/GazeboRosVelodyneLaser.h\n'}
+[14.198203] (scv_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/lib/libgazebo_ros_velodyne_laser.so\n'}
+[14.203432] (scv_robot_gazebo) StdoutLine: {'line': b'-- Set runtime path of "/home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/install/scv_robot_gazebo/lib/libgazebo_ros_velodyne_laser.so" to ""\n'}
+[14.205213] (scv_robot_gazebo) CommandEnded: {'returncode': 0}
+[14.224140] (-) TimerEvent: {}
+[14.232290] (scv_robot_gazebo) JobEnded: {'identifier': 'scv_robot_gazebo', 'rc': 0}
+[14.232882] (-) EventReactorShutdown: {}

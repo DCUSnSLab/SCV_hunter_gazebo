@@ -1,0 +1,23 @@
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /opt/ros/humble/include/gazebo_ros/node.hpp:18,
+                 from /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/sensors/velodyne_simulator/velodyne_gazebo_plugins/include/velodyne_gazebo_plugins/GazeboRosVelodyneLaser.h:53,
+                 from /home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/sensors/velodyne_simulator/velodyne_gazebo_plugins/src/GazeboRosVelodyneLaser.cpp:35:
+/home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/sensors/velodyne_simulator/velodyne_gazebo_plugins/src/GazeboRosVelodyneLaser.cpp: In member function ‘virtual void gazebo::GazeboRosVelodyneLaser::Load(gazebo::sensors::SensorPtr, sdf::v9::ElementPtr)’:
+/home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/sensors/velodyne_simulator/velodyne_gazebo_plugins/src/GazeboRosVelodyneLaser.cpp:295:40: warning: format ‘%s’ expects a matching ‘char*’ argument [-Wformat=]
+  295 |   RCLCPP_INFO(ros_node_->get_logger(), "Velodyne %slaser plugin ready");
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/d2-521-30/hunter_gazebo_ws/src/scv_robot_gazebo/sensors/velodyne_simulator/velodyne_gazebo_plugins/src/GazeboRosVelodyneLaser.cpp:295:51: note: format string is defined here
+  295 |   RCLCPP_INFO(ros_node_->get_logger(), "Velodyne %slaser plugin ready");
+      |                                                  ~^
+      |                                                   |
+      |                                                   char*

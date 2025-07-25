@@ -106,4 +106,11 @@ def generate_launch_description():
         robot_state_publisher,
         spawn_entity,
         rviz,
+        # Velocity Publisher Node
+        Node(
+            package='scv_robot_gazebo',
+            executable='velocity_publisher',
+            name='velocity_publisher',
+            output='screen'
+        ),
     ])
